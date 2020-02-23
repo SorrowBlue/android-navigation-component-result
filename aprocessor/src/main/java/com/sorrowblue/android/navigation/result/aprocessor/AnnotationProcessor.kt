@@ -15,7 +15,6 @@ import javax.lang.model.type.MirroredTypesException
 import javax.tools.Diagnostic.Kind.ERROR
 import kotlin.reflect.KClass
 
-
 const val KAPT_KOTLIN_GENERATED_OPTION_NAME = "kapt.kotlin.generated"
 const val FRAGMENT = "androidx.fragment.app.Fragment"
 

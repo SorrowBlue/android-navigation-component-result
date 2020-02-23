@@ -1,5 +1,4 @@
-include ':fragment-ext'
 include ':aprocessor'
 include ':annotations'
 include ':app'
-rootProject.name = "My Application"
+rootProject.name = "android-navigation-result-ktx"

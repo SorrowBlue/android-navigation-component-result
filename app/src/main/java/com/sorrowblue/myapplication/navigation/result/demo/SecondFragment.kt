@@ -23,9 +23,6 @@ class SecondFragment : Fragment(R.layout.fragment_second) {
 		super.onViewCreated(view, savedInstanceState)
 		view.findViewById<TextView>(R.id.textview_second).text =
 				getString(R.string.hello_second_fragment, args.myArg.toString())
-		kotlin.runCatching {
-			Toast.makeText(requireContext(), args.myArg.toString(), Toast.LENGTH_SHORT).show()
-		}
 		view.findViewById<Button>(R.id.button_second).setOnClickListener {
 			setNavigationResult(args.myArg.toString() as java.lang.String)
             findNavController().navigate(SecondFragmentDirections.firstFragment(kotlin.runCatching { args.myArg + 1 }.getOrElse { 0 }))

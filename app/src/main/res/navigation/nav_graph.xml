@@ -28,7 +28,9 @@
         <action
             android:id="@+id/firstFragment"
             app:destination="@id/FirstFragment"
-            app:launchSingleTop="true" />
+            app:launchSingleTop="true"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
 
         <argument
             android:name="myArg"

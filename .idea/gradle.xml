@@ -14,7 +14,6 @@
             <option value="$PROJECT_DIR$/annotations" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/aprocessor" />
-            <option value="$PROJECT_DIR$/fragment-ext" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
