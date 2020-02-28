@@ -1,10 +1,25 @@
+apply plugin: 'java-library'
 apply plugin: 'kotlin'
+
+def repo = new File(rootDir, "repository")
+
+apply plugin: 'maven'
+
+uploadArchives {
+
+    repositories {
+        mavenDeployer {
+            repository url: "file://${repo.absolutePath}"
+            pom.version = '1.0.0'             // version
+            pom.groupId = 'com.sorrowblue.androidx.navigation'    // グループ名
+            pom.artifactId = 'navigation-result-annotations' // ライブラリ名
+        }
+    }
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    api 'androidx.fragment:fragment:1.2.2'
-    api 'androidx.fragment:fragment-ktx:1.2.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
 
 sourceCompatibility = "1.7"

@@ -1,4 +1,4 @@
-package com.sorrowblue.android.navigation.result.annotations
+package com.sorrowblue.androidx.navigation.result
 
 import kotlin.reflect.KClass
 import kotlin.reflect.KType

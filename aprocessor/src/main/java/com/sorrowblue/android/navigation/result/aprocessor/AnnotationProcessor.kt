@@ -1,7 +1,7 @@
 package com.sorrowblue.android.navigation.result.aprocessor
 
 import com.google.auto.service.AutoService
-import com.sorrowblue.android.navigation.result.annotations.NavigationResult
+import com.sorrowblue.androidx.navigation.result.NavigationResult
 import com.squareup.kotlinpoet.*
 import java.io.File
 import javax.annotation.processing.AbstractProcessor
